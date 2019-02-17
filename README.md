@@ -7,4 +7,4 @@ Var circle={
   
 2.)range such as background color. Anywhere between blac(0) and white(255)
 
-3.)
+3.)var x= random(1900,1999);
