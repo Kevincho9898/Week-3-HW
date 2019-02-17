@@ -1,0 +1,65 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+// track the circle to draw next frame
+var x = 25;
+var y = 25;
+
+function draw() {
+  colorMode(HSB);
+  stroke(255);
+
+  // draw circle with random hue
+  fill(random(43,2,22,2), 100, 100);
+ rect(x, y, random(80), random(20));
+
+  // set up next circle
+  x = x + 25;
+
+  // if we hit the right edge, go down a line
+  if (x > width-random(25)) {
+    x = random(75);
+    y = y + random(85);
+  }
+
+  // if we hit the bottom edge, reset to top
+  if (y > height-random(40)) {
+    y = 125;
+  }
+}
+
+
+
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+// track the circle to draw next frame
+var x = 125;
+var y = 125;
+
+function draw() {
+  colorMode(HSB);
+  stroke(255);
+
+  // draw circle with random hue
+  fill(random(8,383,344,43), 100, 100);
+    ellipse(random(400), random(400), random(190), random(90));
+   
+
+  // set up next circle
+  x = x + 125;
+
+  // if we hit the right edge, go down a line
+  if (x > width-125) {
+    x = 25;
+    y = y + 25;
+  }
+
+  // if we hit the bottom edge, reset to top
+  if (y > height-25) {
+    y = 125;
+  }
+}
